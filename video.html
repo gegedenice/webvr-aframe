@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <title>360 Video with music — A-Frame</title>
+    <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+     <script>
+ function soundChangeToAdele(){
+     document.getElementById("SoundToBeChanged").innerHTML = "<audio id='sound' src='music/Adele.mp3' autoplay></audio>"; 
+ };
+ function soundChangeToDaft(){
+     document.getElementById("SoundToBeChanged").innerHTML = "<audio id='sound' src='music/DaftPunk.mp3' autoplay></audio>"; 
+ };
+  function soundChangeToJoris(){
+     document.getElementById("SoundToBeChanged").innerHTML = "<audio id='sound' src='music/youngandbrave.mp3' autoplay></audio>"; 
+ };
+</script>
+    </head>  
+  </head>
+  <body>
+  <form>
+     <input type="submit" value="Rolling in the Deep (Adele)" onClick="soundChangeToAdele(); return false;">
+     <input type="submit" value="Lose Yourself to Dance (Daft Punk)" onClick="soundChangeToDaft(); return false;">
+     <input type="submit" value="Young and brave (Joris Delacroix)" onClick="soundChangeToJoris(); return false;">
+</form>
+    <a-scene>
+      <a-assets>
+       <video id="video" src="https://ucarecdn.com/bcece0a8-86ce-460e-856b-40dac4875f15/"
+               autoplay loop crossorigin></video>
+                <div id="SoundToBeChanged"><audio id="sound" src="youngandbrave.mp3" autoplay></audio></div>
+            </a-assets>
+          <a-curvedimage src="http://images.amazon.com/images/P/2100509764.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 100 0" scale="1.2 1.2 1.2" material="" geometry="" position="1.63 2.14 5.92" visible="">
+      </a-curvedimage>  
+      <a-curvedimage src="http://images.amazon.com/images/P/2297025270.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 110 0" scale="1.2 1.2 1.2" material="" geometry="" position="0.87 2.78 3.87" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2100577298.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 120 0" scale="1.2 1.2 1.2" material="" geometry="" position="0.57 1.57 1.23" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/229704786X.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 130 0" scale="1.2 1.2 1.2" material="" geometry="" position="-0.43 3.34 0.22" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/201146191X.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 140 0" scale="1.2 1.2 1.2" material="" geometry="" position="-1.66 2.77 -0.47" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2100491458.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 150 0" scale="1.2 1.2 1.2" material="" geometry="" position="-3.26 1.74 -0.90" visible="">
+      </a-curvedimage>
+       <a-curvedimage src="http://images.amazon.com/images/P/210053436X.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 100 0" scale="1.2 1.2 1.2" material="" geometry="" position="0.00 3.64 0.00" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2708134485.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 160 0" scale="1.2 1.2 1.2" material="" geometry="" position="-5.28 3.36 -0.69" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2840013843.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 100 0" scale="1.2 1.2 1.2" material="" geometry="" position="0.00 6.40 0.00" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2100547526.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 170 0" scale="1.2 1.2 1.2" material="" geometry="" position="-6.75 1.89 -0.54" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2011459168.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 180 0" scale="1.2 1.2 1.2" material="" geometry="" position="-7.77 1.80 2.25" visible="">
+      </a-curvedimage>
+       <a-curvedimage src="http://images.amazon.com/images/P/2100566512.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 220 0" scale="1.2 1.2 1.2" material="" geometry="" position="-5.37 1.52 2.23" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2297039816.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 90 0" scale="1.2 1.2 1.2" material="" geometry="" position="2.01 1.37 6.92" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/210057423X.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 50 0" scale="1.2 1.2 1.2" material="" geometry="" position="-0.76 1.56 4.90" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2846246858.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 40 0" scale="1.2 1.2 1.2" material="" geometry="" position="-1.46 2.22 5.73" visible="">
+      </a-curvedimage>
+       <a-curvedimage src="http://images.amazon.com/images/P/2297013965.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 230 0" scale="1.2 1.2 1.2" material="" geometry="" position="-5.40 1.83 3.27" visible="">
+      </a-curvedimage>            
+      <a-curvedimage src="http://images.amazon.com/images/P/2226179038.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 90 0" scale="1.2 1.2 1.2" material="" geometry="" position="0.54 4.49 6.74" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2100492365.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 40 0" scale="1.2 1.2 1.2" material="" geometry="" position="-0.84 4.26 4.57" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2707142034.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 230 0" scale="1.2 1.2 1.2" material="" geometry="" position="-4.99 4.54 1.58" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2100070193.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 240 0" scale="1.2 1.2 1.2" material="" geometry="" position="-5.59 1.71 4.48" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2910157814.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 270 0" scale="1.2 1.2 1.2" material="" geometry="" position="-4.16 1.91 3.96" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2842009762.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 100 0" scale="1.2 1.2 1.2" material="" geometry="" position="0.28 5.62 3.35" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2708137042.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 160 0" scale="1.2 1.2 1.2" material="" geometry="" position="-2.56 5.11 -0.28" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/271178777X.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 140 0" scale="1.2 1.2 1.2" material="" geometry="" position="-1.5 5.44 -0.92" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2846246548.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 170 0" scale="1.2 1.2 1.2" material="" geometry="" position="-7.07 4.75 -0.98" visible="">
+      </a-curvedimage>
+     <a-curvedimage src="http://images.amazon.com/images/P/2226136819.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 200 0" scale="1.2 1.2 1.2" material="" geometry="" position="-5.95 5.38 0.4" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2707142034.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 230 0" scale="1.2 1.2 1.2" material="" geometry="" position="-4.02 6.23 1.25" visible="">
+      </a-curvedimage>
+     <a-curvedimage src="http://images.amazon.com/images/P/2759200019.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 250 0" scale="1.2 1.2 1.2" material="" geometry="" position="-4.33 4.97 2.02" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2846244782.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 90 0" scale="1.2 1.2 1.2" material="" geometry="" position="0.54 5.48 4.68" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/270714343X.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 130 0" scale="1.2 1.2 1.2" material="" geometry="" position="-0.43 6.24 0.29" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2702134181.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 140 0" scale="1.2 1.2 1.2" material="" geometry="" position="-1.5 8.36 -0.92" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2876146193.01.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 170 0" scale="1.2 1.2 1.2" material="" geometry="" position="-6.71 7.97 -0.28" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/270813485X.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 90 0" scale="1.2 1.2 1.2" material="" geometry="" position="0.54 7.46 6.74" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2846245622.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 90 0" scale="1.2 1.2 1.2" material="" geometry="" position="0.54 8.27 4.68" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/274401723X.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 230 0" scale="1.2 1.2 1.2" material="" geometry="" position="-4.55 7.62 1.58" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/284274201X.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 160 0" scale="1.2 1.2 1.2" material="" geometry="" position="-2.56 7.65 -0.28" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2738008593.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 160 0" scale="1.2 1.2 1.2" material="" geometry="" position="-4.4 8.89 -0.72" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/286883471X.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 100 0" scale="1.2 1.2 1.2" material="" geometry="" position="0 8.61 2.42" visible="">
+      </a-curvedimage>
+      <a-curvedimage src="http://images.amazon.com/images/P/2212120702.01._SSTHUM_.jpg" radius="5" theta-length="15" height="2" rotation="0 110 0" scale="1.2 1.2 1.2" material="" geometry="" position="-0.86 9.1 -0.14" visible="">
+      </a-curvedimage>
+      <a-videosphere src="#video" rotation="0 180 0"></a-videosphere>
+      <a-entity sound="src: #sound;autoplay: true"></a-entity>
+      <a-entity id="cameraWrapper" position="0 1 8" rotation="0.00 0.00 0.00" scale="1.00 1.00 1.00" visible="">
+        <a-entity id="camera" camera="active:false" look-controls="" wasd-controls="" position="-4.98 15.00 -3.06" rotation="-16.84 -19.60 0.00" scale="1.00 1.00 1.00" visible="">
+          <!-- Cursor. -->
+          <a-entity id="cursor" position="-0.10 0.53 -2.23" geometry="primitive: ring; radiusOuter: 0.016; radiusInner: 0.01" material="color: #ff9; shader: flat; transparent: true; opacity: 0.5" scale="2 2 2" raycaster="" rotation="" visible="">
+          </a-entity>
+        </a-entity>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
